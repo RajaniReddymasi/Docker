@@ -3,5 +3,5 @@ FROM almalinux:${version:-8}
 #RUN cat /etc/*release
 ARG COURSE
 ARG TRAINER
-RUN echo "Course is: ${COURSE:-DevOPS}, Trainer is: ${TRAINER:-shiva}"
+RUN echo "Course is: ${COURSE}, Trainer is: ${TRAINER}"
 CMD ["sleep", "100"]
